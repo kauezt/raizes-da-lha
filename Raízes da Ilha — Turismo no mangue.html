@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raízes da Ilha — Turismo no mangue</title>
+<meta name="description" content="Passeios de barco, hospedagem, restaurante e pacotes completos entre natureza, mangue e cultura local.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#1f3d2e;--gd:#142a20;--gm:#5a6b3a;--br:#6b4a2f;--sand:#e9dfc8;--off:#faf7f0;--ink:#1d2a22;--water:#7fb3b0;--card:#fff;--line:#e4dccb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--off:#101a14;--ink:#ece6d6;--card:#18261d;--line:#2a3b30;--sand:#223226}}
+:root[data-theme="dark"]{--off:#101a14;--ink:#ece6d6;--card:#18261d;--line:#2a3b30;--sand:#223226}
+html{scroll-behavior:smooth;scroll-padding-top:70px}*{box-sizing:border-box}
+body{margin:0;background:var(--off);color:var(--ink);font:400 16px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1;margin:0 0 .5em}
+h2{font-size:clamp(2rem,5vw,3.1rem);color:var(--g)}@media (prefers-color-scheme:dark){h2{color:var(--sand)}}
+img{max-width:100%}.wrap{max-width:1160px;margin:auto;padding:0 20px}section{padding:84px 0}
+.eyebrow{letter-spacing:.2em;font-size:.75rem;text-transform:uppercase;color:var(--gm);font-weight:600}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;transition:.3s;padding:12px 0}
+nav.s{background:rgba(20,42,32,.94);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+nav a{color:#f3eddc;text-decoration:none;font-size:.88rem;margin-left:18px}.logo{display:flex;align-items:center;gap:10px;color:#f3eddc;font:600 1.25rem 'Cormorant Garamond',serif;letter-spacing:.08em;text-decoration:none;margin:0}
+.logo img,.logo svg{height:38px;width:auto}@media(max-width:860px){.links a:not(.cta){display:none}}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;border:1px solid transparent;font:600 .85rem Inter;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:.25s}
+.btn.p{background:#c9a56a;color:#1a1208}.btn.p:hover{background:#dcb97c;transform:translateY(-2px)}
+.btn.o{border-color:#f3eddc;color:#f3eddc}.btn.o:hover{background:rgba(255,255,255,.12)}
+.btn.g{background:var(--g);color:#fff}.btn.g:hover{background:var(--gd);transform:translateY(-2px)}.btn.s{padding:8px 14px;font-size:.7rem}
+.hero{min-height:100vh;display:flex;align-items:center;color:#f3eddc;background:linear-gradient(rgba(10,26,18,.55),rgba(10,26,18,.75)),var(--hi,linear-gradient(160deg,#2b4d3a,#142a20 60%,#6b4a2f));background-size:cover;background-position:center;background-attachment:fixed}
+.hero h1{font-size:clamp(2.8rem,8vw,5.6rem);max-width:12ch}.hero p{max-width:520px;font-size:1.15rem;opacity:.92}.hero .bt{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.about{display:grid;gap:40px;grid-template-columns:1.1fr 1fr;align-items:center}@media(max-width:860px){.about{grid-template-columns:1fr}}
+.ph{aspect-ratio:4/3;border-radius:22px;background:linear-gradient(135deg,var(--gm),var(--g));background-size:cover;background-position:center;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.chips span{background:var(--sand);padding:8px 16px;border-radius:999px;font-size:.88rem}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.06);transition:.3s;display:flex;flex-direction:column}.card:hover{transform:translateY(-6px);box-shadow:0 18px 38px rgba(0,0,0,.14)}
+.card .ph{border-radius:0;box-shadow:none;aspect-ratio:16/10}.card .b{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}.card h3{font-size:1.6rem;color:var(--g);margin:0}@media (prefers-color-scheme:dark){.card h3{color:var(--sand)}}
+.meta{font-size:.82rem;color:var(--gm)}.card ul{list-style:none;padding:0;margin:0;font-size:.92rem}.card li:before{content:"✓ ";color:var(--gm)}
+.price{font:700 1.7rem 'Cormorant Garamond';color:var(--br)}.price s{font-size:1rem;opacity:.5;margin-right:6px}.card .btn{margin-top:auto;text-align:center}
+.dark{background:var(--gd);color:#efe8d6}.dark h2{color:#f3eddc}.dark .eyebrow{color:var(--water)}
+.tour{display:grid;gap:36px;grid-template-columns:1fr 1fr}@media(max-width:860px){.tour{grid-template-columns:1fr}}
+.tour dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:18px 0}.tour dt{color:var(--water);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}.tour dd{margin:0}
+.gal{columns:3 220px;column-gap:14px}.gal figure{margin:0 0 14px;break-inside:avoid;border-radius:16px;overflow:hidden;cursor:zoom-in;position:relative}
+.gal img{width:100%;display:block;transition:.5s}.gal figure:hover img{transform:scale(1.07)}.gal figcaption{position:absolute;inset:auto 0 0;padding:30px 14px 10px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.7));font-size:.85rem;opacity:0;transition:.3s}.gal figure:hover figcaption{opacity:1}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:50;display:none;align-items:center;justify-content:center;flex-direction:column;color:#fff}.lb.on{display:flex}.lb img{max-height:80vh;max-width:92vw;border-radius:8px}.lb button{position:absolute;top:50%;background:none;border:0;color:#fff;font-size:3rem;cursor:pointer}
+.q{font:italic 1.35rem 'Cormorant Garamond';margin:0 0 10px}.stars{color:#c9a56a}
+footer{background:var(--gd);color:#d9d2bf;padding:56px 0 30px;font-size:.9rem}footer a{color:#d9d2bf;margin-right:14px;text-decoration:none}footer .row{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:28px;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+#ed{position:fixed;left:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;background:#c9a56a;color:#1a1208;padding:12px 18px;border-radius:999px;font:600 .85rem Inter;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+/* admin */
+#adm{display:none;position:fixed;inset:0;z-index:60;background:var(--off);overflow:auto}#adm.on{display:block}
+.ah{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:var(--gd);color:#f3eddc;position:sticky;top:0;z-index:2}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;padding:16px 20px}.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer;font:500 .85rem Inter}.tabs button.on{background:var(--g);color:#fff}
+.row2{display:flex;gap:10px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin:8px 20px;flex-wrap:wrap}.row2 img{width:48px;height:48px;object-fit:cover;border-radius:8px}.row2 .x{display:flex;gap:6px;flex-wrap:wrap}
+.form{max-width:640px;margin:16px 20px;display:grid;gap:12px}.form label{font-size:.78rem;font-weight:600;color:var(--gm);display:grid;gap:4px}
+.form input,.form textarea{padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}.form textarea{min-height:90px}.note{margin:12px 20px;padding:12px 16px;background:var(--sand);border-radius:12px;font-size:.88rem}
+</style></head><body>
+<nav id="nav"><div class="wrap"><a class="logo" href="#top" id="lg"></a><div class="links"><a href="#sobre">Sobre</a><a href="#pacotes">Pacotes</a><a href="#passeio">Passeio</a><a href="#hospedagem">Hospedagem</a><a href="#restaurante">Restaurante</a><a href="#galeria">Galeria</a><a class="cta btn p s" href="#contato" style="margin-left:18px;color:#1a1208">Contato</a></div></div></nav>
+<main id="app"></main>
+<footer><div class="wrap"><div class="row"><div style="max-width:320px"><div class="logo" id="lg2" style="margin-bottom:10px"></div><p id="fd"></p></div>
+<div><a href="#sobre">Sobre</a><a href="#pacotes">Pacotes</a><a href="#passeio">Passeio</a><a href="#hospedagem">Hospedagem</a><a href="#restaurante">Restaurante</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a><p id="fc"></p><a href="#admin" style="opacity:.5">Área do proprietário</a></div></div><p style="opacity:.6;margin-top:28px">© <span id="yr"></span> <span class="nm"></span>. Todos os direitos reservados.</p></div></footer>
+<a class="wa" id="waf" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<div class="lb" id="lb"><button style="left:10px" id="pv">‹</button><img id="li" alt=""><p id="lc"></p><button style="right:10px" id="nx">›</button></div>
+<a id="ed" href="#admin" style="display:none">⚙ Editar site</a>
+<div id="adm"></div>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ROOTS='<svg viewBox="0 0 60 44" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M30 4v14M30 18C22 18 14 24 8 38M30 18c-3 8-6 14-9 20M30 18c3 8 6 14 9 20M30 18c8 0 16 6 22 20"/><path d="M2 42c8-4 14 4 22 0s14 4 22 0 10 0 12-2" stroke="#7fb3b0"/></svg>';
+const BRL=n=>n||n===0?'R$ '+Number(n).toLocaleString('pt-BR',{minimumFractionDigits:2}):'';
+const img=id=>id?'/_blob/'+id:'';
+const DEF={settings:{name:'Raízes da Ilha',whatsapp:'',instagram:'',email:'',address:'',heroTitle:'Viva a ilha. Sinta as raízes.',heroSub:'Uma experiência completa entre natureza, sabores, hospedagem e o encanto das águas.',aboutTitle:'Uma experiência que começa muito antes do embarque.',aboutText:'Texto demonstrativo: apresente aqui quem é o Raízes da Ilha, sua proposta de turismo, a conexão com a natureza, o passeio de barco, a hospedagem, a gastronomia e a cultura local. Edite no painel.',footerText:'Ecoturismo com raízes na natureza e na cultura local.',tourTitle:'Descubra a ilha por outro ângulo.',stayTitle:'Seu refúgio na ilha.',foodTitle:'Sabores que fazem parte da experiência.',testTitle:'Quem viveu, recomenda.'},
+packages:[{nome:'Pacote Raízes',descricao:'Passeio de barco + hospedagem + experiência gastronômica. (demonstrativo)',duracao:'Duração a definir',pessoas:'Nº de pessoas a definir',inclusos:'Passeio de barco\nHospedagem\nRestaurante\nExperiência na natureza',preco:'',promo:'',ativo:true,ordem:1}],
+tours:[{nome:'Passeio de barco pelo mangue',duracao:'A definir',roteiro:'Roteiro demonstrativo — edite no painel.',capacidade:'A definir',pontos:'Pontos visitados a definir',horarios:'Horários a definir',info:'Informações importantes a definir',preco:'',ativo:true,ordem:1}],
+stays:[{nome:'Hospedagem (exemplo)',descricao:'Descrição demonstrativa da hospedagem.',capacidade:'A definir',comodidades:'Comodidades a definir',preco:'',info:'',ativo:true,ordem:1}],
+dishes:[{nome:'Prato típico (exemplo)',descricao:'Descrição demonstrativa do prato.',categoria:'Pratos',preco:'',ativo:true,ordem:1}],
+gallery:[],tests:[{nome:'Visitante (exemplo)',texto:'Depoimento demonstrativo — substitua pelos reais.',nota:5,data:'',ativo:true,ordem:1}]};
+const F=(k,l,t='text')=>({k,l,t});
+const SCH={
+settings:{doc:true,title:'Configurações',f:[F('name','Nome da empresa'),F('logo','Logo (upload)','img'),F('favicon','Favicon (upload)','img'),F('heroImage','Imagem do topo','img'),F('whatsapp','WhatsApp (só números com DDD, ex: 5598...)'),F('instagram','Link do Instagram'),F('facebook','Link do Facebook'),F('tiktok','Link do TikTok'),F('youtube','Link do YouTube'),F('email','E-mail'),F('address','Endereço / localização'),F('heroTitle','Título principal'),F('heroSub','Subtítulo','area'),F('aboutTitle','Título do Sobre'),F('aboutText','Texto do Sobre','area'),F('aboutImage','Imagem do Sobre','img'),F('tourTitle','Título do passeio'),F('tourImage','Imagem do passeio','img'),F('stayTitle','Título da hospedagem'),F('foodTitle','Título do restaurante'),F('testTitle','Título dos depoimentos'),F('footerText','Texto do rodapé','area')]},
+packages:{title:'Pacotes',f:[F('nome','Nome'),F('foto','Foto','img'),F('descricao','Descrição','area'),F('duracao','Duração'),F('pessoas','Número de pessoas'),F('inclusos','Itens inclusos (um por linha)','area'),F('preco','Preço (número)','num'),F('promo','Preço promocional (opcional)','num'),F('ordem','Ordem','num'),F('ativo','Ativo','bool')]},
+tours:{title:'Passeios',f:[F('nome','Nome'),F('foto','Foto','img'),F('duracao','Duração'),F('roteiro','Roteiro','area'),F('capacidade','Capacidade'),F('pontos','Pontos visitados'),F('horarios','Horários'),F('info','Informações importantes','area'),F('preco','Preço (número)','num'),F('ordem','Ordem','num'),F('ativo','Ativo','bool')]},
+stays:{title:'Hospedagem',f:[F('nome','Nome'),F('foto','Foto','img'),F('descricao','Descrição','area'),F('capacidade','Capacidade'),F('comodidades','Comodidades'),F('preco','Valor (número)','num'),F('info','Informações adicionais','area'),F('ordem','Ordem','num'),F('ativo','Ativo','bool')]},
+dishes:{title:'Restaurante',f:[F('nome','Nome'),F('foto','Foto','img'),F('descricao','Descrição','area'),F('categoria','Categoria (prato, porção, bebida...)'),F('preco','Preço (número)','num'),F('ordem','Ordem','num'),F('ativo','Disponível','bool')]},
+gallery:{title:'Galeria',f:[F('foto','Foto','img'),F('titulo','Título'),F('descricao','Descrição'),F('principal','Foto principal','bool'),F('ordem','Ordem','num'),F('ativo','Ativa','bool')]},
+tests:{title:'Depoimentos',f:[F('nome','Nome'),F('foto','Foto (opcional)','img'),F('texto','Depoimento','area'),F('nota','Nota (1 a 5)','num'),F('data','Data'),F('ordem','Ordem','num'),F('ativo','Ativo','bool')]}};
+const D={settings:{},packages:null,tours:null,stays:null,dishes:null,gallery:null,tests:null},ids={};let db=null,assets=null,canEdit=false;
+const L=c=>{const a=(D[c]||[]).slice();return a.length?a:(c==='gallery'?[]:DEF[c].map((x,i)=>({...x,_id:'demo'+i,_demo:1})))};
+const act=c=>L(c).filter(x=>x.ativo!==false).sort((a,b)=>(a.ordem||0)-(b.ordem||0));
+const S=()=>({...DEF.settings,...D.settings});
+function wa(msg){const n=String(S().whatsapp||'').replace(/\D/g,'');return n?'https://wa.me/'+n+'?text='+encodeURIComponent(msg):'#contato'}
+const soc=s=>[['facebook','👍 Facebook'],['tiktok','🎵 TikTok'],['youtube','▶️ YouTube']].filter(x=>s[x[0]]).map(x=>`<span><a target="_blank" rel="noopener" style="color:inherit" href="${esc(s[x[0]])}">${x[1]}</a></span>`).join('');
+function logo(dark){const s=S();return s.logo?`<img src="${img(s.logo)}" alt="${esc(s.name)}">`:ROOTS+`<span>${esc(s.name).toUpperCase()}</span>`}
+function render(){const s=S();document.title=s.name+' — Turismo no mangue';
+const hi=s.heroImage?`style="--hi:linear-gradient(transparent,transparent),url('${img(s.heroImage)}')"`:'';
+const pk=act('packages').map(p=>`<article class="card rv"><div class="ph" style="${p.foto?`background-image:url('${img(p.foto)}')`:''}"></div><div class="b"><h3>${esc(p.nome)}</h3><div class="meta">${esc(p.duracao)} · ${esc(p.pessoas)}</div><p>${esc(p.descricao)}</p><ul>${String(p.inclusos||'').split('\n').filter(Boolean).map(i=>`<li>${esc(i)}</li>`).join('')}</ul><div class="price">${p.promo?`<s>${BRL(p.preco)}</s>${BRL(p.promo)}`:(BRL(p.preco)||'Sob consulta')}</div><a class="btn g" target="_blank" rel="noopener" href="${wa('Olá! Quero reservar o '+p.nome)}">Reservar pelo WhatsApp</a></div></article>`).join('');
+const t=act('tours')[0]||{};
+const st=act('stays').map(p=>`<article class="card rv"><div class="ph" style="${p.foto?`background-image:url('${img(p.foto)}')`:''}"></div><div class="b"><h3>${esc(p.nome)}</h3><div class="meta">${esc(p.capacidade)}</div><p>${esc(p.descricao)}</p><p class="meta">${esc(p.comodidades)}</p><p class="meta">${esc(p.info)}</p><div class="price">${BRL(p.preco)||'Sob consulta'}</div><a class="btn g" target="_blank" rel="noopener" href="${wa('Olá! Gostaria de consultar disponibilidade: '+p.nome)}">Consultar disponibilidade</a></div></article>`).join('');
+const ds=act('dishes').map(p=>`<article class="card rv"><div class="ph" style="${p.foto?`background-image:url('${img(p.foto)}')`:''}"></div><div class="b"><div class="meta">${esc(p.categoria)}</div><h3>${esc(p.nome)}</h3><p>${esc(p.descricao)}</p><div class="price">${BRL(p.preco)}</div></div></article>`).join('');
+const gl=act('gallery').sort((a,b)=>(b.principal?1:0)-(a.principal?1:0));
+const ts=act('tests').map(p=>`<article class="card rv"><div class="b"><div class="stars">${'★'.repeat(Math.min(5,p.nota||5))}</div><p class="q">“${esc(p.texto)}”</p><strong>${esc(p.nome)}</strong><span class="meta">${esc(p.data)}</span></div></article>`).join('');
+$('#app').innerHTML=`<header class="hero" id="top" ${hi}><div class="wrap"><p class="eyebrow" style="color:var(--water)">${esc(s.name)}</p><h1>${esc(s.heroTitle)}</h1><p>${esc(s.heroSub)}</p><div class="bt"><a class="btn p" href="#pacotes">Conheça nossos pacotes</a><a class="btn o" target="_blank" rel="noopener" href="${wa('Olá! Gostaria de mais informações.')}">Fale conosco</a></div></div></header>
+<section id="sobre"><div class="wrap about"><div class="rv"><p class="eyebrow">Sobre</p><h2>${esc(s.aboutTitle)}</h2><p>${esc(s.aboutText)}</p><div class="chips"><span>🚤 Passeio de barco</span><span>🏡 Hospedagem</span><span>🍽️ Gastronomia</span><span>🌿 Natureza</span><span>📍 Experiências locais</span></div></div><div class="ph rv" style="${s.aboutImage?`background-image:url('${img(s.aboutImage)}')`:''}"></div></div></section>
+<section id="pacotes" style="background:var(--sand)"><div class="wrap"><p class="eyebrow">Experiências completas</p><h2>Nossos Pacotes</h2><div class="grid">${pk}</div></div></section>
+<section id="passeio" class="dark"><div class="wrap tour"><div class="ph rv" style="aspect-ratio:1/1;${t.foto||s.tourImage?`background-image:url('${img(t.foto||s.tourImage)}')`:''}"></div><div class="rv"><p class="eyebrow">Passeio de barco</p><h2>${esc(s.tourTitle)}</h2><dl><dt>Duração</dt><dd>${esc(t.duracao)}</dd><dt>Roteiro</dt><dd>${esc(t.roteiro)}</dd><dt>Capacidade</dt><dd>${esc(t.capacidade)}</dd><dt>Pontos</dt><dd>${esc(t.pontos)}</dd><dt>Horários</dt><dd>${esc(t.horarios)}</dd><dt>Importante</dt><dd>${esc(t.info)}</dd><dt>Preço</dt><dd>${BRL(t.preco)||'Sob consulta'}</dd></dl><a class="btn p" target="_blank" rel="noopener" href="${wa('Olá! Quero reservar o passeio de barco.')}">Reservar passeio</a></div></div></section>
+<section id="hospedagem"><div class="wrap"><p class="eyebrow">Hospedagem</p><h2>${esc(s.stayTitle)}</h2><div class="grid">${st}</div></div></section>
+<section id="restaurante" style="background:var(--sand)"><div class="wrap"><p class="eyebrow">Restaurante</p><h2>${esc(s.foodTitle)}</h2><div class="grid">${ds}</div></div></section>
+<section id="galeria"><div class="wrap"><p class="eyebrow">Galeria</p><h2>Momentos na ilha</h2>${gl.length?`<div class="gal">${gl.map((g,i)=>`<figure class="rv" data-i="${i}"><img loading="lazy" src="${img(g.foto)}" alt="${esc(g.titulo)}"><figcaption>${esc(g.titulo)}</figcaption></figure>`).join('')}</div>`:'<p class="meta">As fotos aparecem aqui após o envio pelo painel.</p>'}</div></section>
+<section style="background:var(--sand)"><div class="wrap"><h2>${esc(s.testTitle)}</h2><div class="grid">${ts}</div></div></section>
+<section class="dark"><div class="wrap" style="text-align:center"><h2>Continue vivendo o ${esc(s.name)}.</h2>${s.instagram?`<a class="btn p" target="_blank" rel="noopener" href="${esc(s.instagram)}">Seguir no Instagram</a>`:'<p>Informe o Instagram no painel.</p>'}</div></section>
+<section id="contato"><div class="wrap"><p class="eyebrow">Contato</p><h2>Vamos planejar sua viagem</h2><div class="chips" style="flex-direction:column;align-items:flex-start;font-size:1.05rem"><span>📱 WhatsApp: ${esc(s.whatsapp)||'a definir'}</span><span>📸 Instagram: ${esc(s.instagram)||'a definir'}</span><span>📍 ${esc(s.address)||'Localização a definir'}</span><span>✉️ ${esc(s.email)||'E-mail a definir'}</span>${soc(s)}</div></div></section>`;
+$('#lg').innerHTML=logo();$('#lg2').innerHTML=logo();$('#fd').textContent=s.footerText;$('#fc').innerHTML=`${esc(s.address)}<br>`+[['instagram','Instagram'],['facebook','Facebook'],['tiktok','TikTok'],['youtube','YouTube']].filter(x=>s[x[0]]).map(x=>`<a target="_blank" rel="noopener" href="${esc(s[x[0]])}">${x[1]}</a>`).join('');$('#waf').href=wa('Olá!');document.querySelectorAll('.nm').forEach(e=>e.textContent=s.name);$('#yr').textContent=new Date().getFullYear();
+if(s.favicon){let l=document.querySelector('link[rel=icon]')||document.head.appendChild(Object.assign(document.createElement('link'),{rel:'icon'}));l.href=img(s.favicon)}
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+document.querySelectorAll('.gal figure').forEach(f=>f.onclick=()=>open_(+f.dataset.i));G=gl}
+let G=[],gi=0;const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+function open_(i){gi=(i+G.length)%G.length;$('#li').src=img(G[gi].foto);$('#lc').textContent=(G[gi].titulo||'')+' '+(G[gi].descricao||'');$('#lb').classList.add('on')}
+$('#pv').onclick=e=>{e.stopPropagation();open_(gi-1)};$('#nx').onclick=e=>{e.stopPropagation();open_(gi+1)};$('#lb').onclick=()=>$('#lb').classList.remove('on');
+addEventListener('scroll',()=>$('#nav').classList.toggle('s',scrollY>40));
+/* ADMIN */
+let tab='settings',edit=null;const A=$('#adm');
+function admin(){if(location.hash!=='#admin'){A.classList.remove('on');return}A.classList.add('on');
+if(!canEdit){A.innerHTML=`<div class="ah"><b>Painel do proprietário</b><a class="btn o s" href="#top">Sair</a></div><div class="note">Acesso restrito. Entre no claude.ai com a conta proprietária (ou com permissão de edição) para administrar o site.${db?'':' O banco de dados não está disponível nesta sessão.'}</div>`;return}
+const tb=Object.keys(SCH).map(k=>`<button class="${k===tab?'on':''}" data-t="${k}">${SCH[k].title}</button>`).join('');
+let body='';const sc=SCH[tab];
+if(edit){body=formHtml()}else if(sc.doc){edit={c:tab,id:'main',d:{...S()}};body=formHtml()}else{const items=(D[tab]||[]).slice().sort((a,b)=>(a.ordem||0)-(b.ordem||0));
+body=`<div style="padding:0 20px"><button class="btn g s" data-n="1">+ Adicionar</button> ${tab==='gallery'?'<label class="btn p s" style="margin-left:6px">📷 Enviar várias fotos<input type="file" id="mf" accept="image/*" multiple hidden></label> <span class="meta" id="mm"></span>':''} ${items.length?'':`<button class="btn s" style="border-color:var(--g)" data-seed="1">Carregar conteúdo demonstrativo</button>`}</div>`+items.map(x=>`<div class="row2"><div style="display:flex;gap:10px;align-items:center">${x.foto?`<img src="${img(x.foto)}" alt="">`:''}<div><b>${esc(x.nome||x.titulo||x.texto||'(sem título)')}</b><div class="meta">${x.ativo===false?'inativo':'ativo'} · ordem ${x.ordem||0}</div></div></div><div class="x"><button class="btn s g" data-up="${x._id}">↑</button><button class="btn s g" data-dn="${x._id}">↓</button><button class="btn s g" data-tg="${x._id}">${x.ativo===false?'Ativar':'Desativar'}</button><button class="btn s g" data-ed="${x._id}">Editar</button><button class="btn s" style="border-color:#a33;color:#a33" data-rm="${x._id}">Excluir</button></div></div>`).join('')}
+A.innerHTML=`<div class="ah"><b>Painel do proprietário</b><span><a class="btn o s" href="#top">Ver site</a></span></div><div class="tabs">${tb}</div>${body}`;
+const mf=$('#mf');if(mf)mf.onchange=async()=>{try{let n=(D.gallery||[]).length;for(const f of mf.files){$('#mm').textContent='Enviando '+f.name+'…';const u=await assets.upload(f);await db.collection('gallery').doc('i'+Date.now()+Math.random().toString(36).slice(2,6)).set({foto:u.id,titulo:'',descricao:'',ativo:true,ordem:++n})}$('#mm').textContent='Fotos enviadas!'}catch(e){$('#mm').textContent='Erro: '+(e.message||e.code)}};
+A.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>{tab=b.dataset.t;edit=null;admin()})}
+function formHtml(){const sc=SCH[edit.c],d=edit.d;return `<div class="form"><h3>${edit.id&&!sc.doc?'Editar':sc.doc?sc.title:'Novo item'}</h3>`+sc.f.map(f=>{const v=d[f.k];
+if(f.t==='area')return`<label>${f.l}<textarea data-k="${f.k}">${esc(v)}</textarea></label>`;
+if(f.t==='bool')return`<label><span><input type="checkbox" data-k="${f.k}" ${(v===undefined?f.k!=='principal':!!v)?'checked':''}> ${f.l}</span></label>`;
+if(f.t==='img')return`<label>${f.l}${v?`<img src="${img(v)}" style="max-height:90px;border-radius:8px;object-fit:cover" alt="">`:''}<input type="file" accept="image/*" data-k="${f.k}"><span>${v?`<button class="btn s" data-clr="${f.k}" type="button">Remover imagem</button>`:''}</span></label>`;
+return`<label>${f.l}<input data-k="${f.k}" ${f.t==='num'?'type="number" step="0.01"':''} value="${esc(v)}"></label>`}).join('')+`<div style="display:flex;gap:10px"><button class="btn g" data-save="1">Salvar</button>${sc.doc?'':'<button class="btn s" data-cancel="1">Cancelar</button>'}</div><p class="meta" id="msg"></p></div>`}
+A.addEventListener('click',async e=>{const t=e.target.closest('button');if(!t)return;const c=tab,list=D[c]||[],by=id=>list.find(x=>x._id===id),col=()=>db.collection(c);
+try{
+if(t.dataset.n){edit={c,id:null,d:{ativo:true,ordem:list.length+1}};admin()}
+else if(t.dataset.seed){for(const x of DEF[c]){await col().doc('i'+Date.now()+Math.random().toString(36).slice(2,6)).set(x)}}
+else if(t.dataset.ed){const x=by(t.dataset.ed);edit={c,id:x._id,d:{...x}};admin()}
+else if(t.dataset.rm){if(confirm('Excluir este item?'))await col().doc(t.dataset.rm).delete()}
+else if(t.dataset.tg){const x=by(t.dataset.tg);await col().doc(x._id).update({ativo:x.ativo===false})}
+else if(t.dataset.up||t.dataset.dn){const s=list.slice().sort((a,b)=>(a.ordem||0)-(b.ordem||0)),i=s.findIndex(x=>x._id===(t.dataset.up||t.dataset.dn)),j=i+(t.dataset.up?-1:1);if(s[j]){const a=s[i],b=s[j];await col().doc(a._id).update({ordem:j+1});await col().doc(b._id).update({ordem:i+1})}}
+else if(t.dataset.cancel){edit=null;admin()}
+else if(t.dataset.clr){edit.d[t.dataset.clr]='';admin()}
+else if(t.dataset.save){const sc=SCH[edit.c],d={...edit.d};$('#msg').textContent='Salvando…';
+for(const f of sc.f){const el=A.querySelector(`[data-k="${f.k}"]`);if(!el)continue;
+if(f.t==='bool')d[f.k]=el.checked;else if(f.t==='num')d[f.k]=el.value===''?'':Number(el.value);
+else if(f.t==='img'){if(el.files[0]){if(!assets)throw Error('Upload indisponível');const r=await assets.upload(el.files[0]);d[f.k]=r.id}}
+else d[f.k]=el.value}
+delete d._id;delete d._demo;
+const ref=sc.doc?db.doc('settings/main'):db.collection(edit.c).doc(edit.id||'i'+Date.now());
+await ref.set(d);if(edit.c==='gallery'&&d.principal)for(const x of D.gallery)if(x._id!==ref.id&&x.principal)await db.collection('gallery').doc(x._id).update({principal:false});
+if(!sc.doc)edit=null;else{edit={c:tab,id:'main',d:{...S(),...d}}}admin();if(sc.doc)$('#msg').textContent='Salvo!'}
+}catch(err){const m=$('#msg');(m||document.body.appendChild(Object.assign(document.createElement('p'),{className:'note'}))).textContent='Erro: '+(err.message||err.code||err)}});
+addEventListener('hashchange',admin);
+/* BOOT */
+render();admin();$('#yr').textContent=new Date().getFullYear();
+(async()=>{try{const u=await claude.use('user');canEdit=u?await u.canEdit():false}catch(e){}
+$('#ed').style.display=canEdit?'block':'none';
+try{assets=await claude.use('assets')}catch(e){}
+try{db=await claude.use('db')}catch(e){}
+if(db){db.doc('settings/main').onSnapshot(s=>{D.settings=s.exists?s.data():{};render();if(!edit)admin()});
+['packages','tours','stays','dishes','gallery','tests'].forEach(c=>db.collection(c).onSnapshot(q=>{D[c]=q.docs.map(d=>({...d.data(),_id:d.id}));render();if(!edit||edit.c!==c)admin()}))}
+admin()})();
+</script></body></html>
